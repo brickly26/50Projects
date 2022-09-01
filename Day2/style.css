@@ -52,7 +52,7 @@ body {
   left: 0;
   transform: translateY(-50%);
   height: 4px;
-  width: 50%;
+  width: 0%;
   z-index: -1;
   transition: .4s ease
 }
@@ -67,7 +67,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 3px solid var(--line-border-empty);
-  transition: .4 ease;
+  transition: .2s ease-in .4s;
 }
 
 .circle.active {
