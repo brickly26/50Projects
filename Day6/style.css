@@ -19,6 +19,7 @@ h1 {
 }
 
 .box {
+  overflow-y: hidden;
   background-color: steelblue;
   color: white;
   display: flex;
