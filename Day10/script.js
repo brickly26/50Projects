@@ -8,11 +8,11 @@ const getJoke = async () => {
     }
   }
 
-  fetch('https://icanhazdadjoke.com/', config)
-    .then(res => res.json())
-    .then(data => {
-      joke.innerText = data.joke
-    })
+  const res = await fetch('https://icanhazdadjoke.com/', config)
+
+  const data = await res.json()
+
+  joke.innerText = data.joke
 }
 
 button.addEventListener('click', getJoke)
